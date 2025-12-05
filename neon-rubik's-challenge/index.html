@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Neon Rubik's Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                800: '#0a0e17',
+                900: '#05070a',
+              },
+              neon: {
+                blue: '#00f3ff',
+                pink: '#ff00ff',
+                green: '#00ff9d'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { margin: 0; overflow: hidden; background-color: #05070a; user-select: none; }
+      /* Custom Scrollbar for rankings */
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #0a0e17; }
+      ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 3px; }
+      ::-webkit-scrollbar-thumb:hover { background: #374151; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "three": "https://aistudiocdn.com/three@^0.181.2",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
